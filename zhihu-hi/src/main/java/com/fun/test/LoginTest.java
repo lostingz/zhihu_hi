@@ -28,7 +28,7 @@ public class LoginTest {
             access_key = zhihuTool.login(httpClient);
             zhihuTool.writeTokenToFile(access_key);
         }
-        String url = URLConfig.PEOPLE_DETAIL_URL + "jack" + "?access_key=" + access_key;
+        String url = URLConfig.SELF_DETAIL_URL + "?access_key=" + access_key;
         HttpGet get = new HttpGet(url);
         get.setHeader("Authorization", "Bearer " + access_key);
         HttpResponse response = httpClient.execute(get);

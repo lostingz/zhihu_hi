@@ -4,3 +4,6 @@
 /.project
 /access_token.txt
 /workSpaceZheng
+*.iml
+.idea
+src/.idea
